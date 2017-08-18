@@ -86,7 +86,11 @@ function createTemplate(data){
     return htmlTemplate;
 }
 
-app.get('/:articleName', function(req, res){
+app.get('/', function(req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'index.html'));
+});
+
+app.get('/:articleName', function(req, res) {
   // articlename == article-one
   // articles[articleName] == {} content object for article-one
   var articleName = req.params.articleName; //provided by express framework
