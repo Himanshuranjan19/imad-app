@@ -3,10 +3,11 @@ console.log('Loaded!');
 //Change the text of the main div
 /*
 var element = document.getElementById('main-text');
-element.innerHTML = 'New Value';*/
+element.innerHTML = 'New Value';
+*/
 
 //Move the image
-
+/*
 var img=document.getElementById('madi');
 var marginLeft = 0;
 function moveRight () {
@@ -17,7 +18,7 @@ img.onclick = function() {
     var interval = setInterval(moveRight, 50);
     //img.style.marginLeft = '100px';
 };
-
+*/
 
 /*
 If upper element tobe selected is not found, lower elements are also not
